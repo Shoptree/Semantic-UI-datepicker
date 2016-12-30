@@ -425,7 +425,7 @@
 .daterangepicker .ui.table td.active,
 .daterangepicker .ui.table tr.active {
     background-color: #357ebd !important;
-    border-color: #FFFFFF !important;
+    border-left-color: rgb(53, 126, 189)!important;
     color: #FFFFFF !important;
 }
 
