@@ -761,7 +761,7 @@
 
             html += '</tr>';
             html += '</thead>';
-            html += '<tbody>';
+            html += '<tbody style="text-align: center;">';
 
             //adjust maxDate to reflect the dateLimit setting in order to
             //grey out end dates beyond the dateLimit
@@ -901,7 +901,7 @@
             // hours
             //
 
-            html = '<i class="wait icon"></i><select class="hourselect">';
+            html = '<i class="wait icon"></i><select class="hourselect ui dropdown">';
 
             var start = this.timePicker24Hour ? 0 : 1;
             var end = this.timePicker24Hour ? 23 : 12;
@@ -933,7 +933,7 @@
             // minutes
             //
 
-            html += ': <select class="minuteselect">';
+            html += ': <select class="minuteselect ui dropdown">';
 
             for (var i = 0; i < 60; i += this.timePickerIncrement) {
                 var padded = i < 10 ? '0' + i : i;
@@ -961,7 +961,7 @@
             //
 
             if (this.timePickerSeconds) {
-                html += ': <select class="secondselect">';
+                html += ': <select class="secondselect ui dropdown">';
 
                 for (var i = 0; i < 60; i++) {
                     var padded = i < 10 ? '0' + i : i;
@@ -990,7 +990,7 @@
             //
 
             if (!this.timePicker24Hour) {
-                html += '<select class="ampmselect">';
+                html += '<select class="ampmselect ui dropdown">';
 
                 var am_html = '';
                 var pm_html = '';
