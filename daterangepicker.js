@@ -699,7 +699,7 @@ import jquery from 'jquery';
                 var inMinYear = currentYear == minYear;
                 var inMaxYear = currentYear == maxYear;
 
-                var monthHtml = '<select class="monthselect">';
+                var monthHtml = '<select class="ui compact selection dropdown monthselect">';
                 for (var m = 0; m < 12; m++) {
                     if ((!inMinYear || m >= minDate.month()) && (!inMaxYear || m <= maxDate.month())) {
                         monthHtml += "<option value='" + m + "'" +
@@ -713,7 +713,7 @@ import jquery from 'jquery';
                 }
                 monthHtml += "</select>";
 
-                var yearHtml = '<select class="yearselect">';
+                var yearHtml = '&nbsp; <select class="ui compact selection dropdown yearselect">';
                 for (var y = minYear; y <= maxYear; y++) {
                     yearHtml += '<option value="' + y + '"' +
                         (y === currentYear ? ' selected="selected"' : '') +
