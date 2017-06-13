@@ -730,7 +730,7 @@
                 }
                 monthHtml += "</select>";
 
-                var yearHtml = '<select class="ui compact selection dropdown yearselect">';
+                var yearHtml = '&nbsp; <select class="ui compact selection dropdown yearselect">';
                 for (var y = minYear; y <= maxYear; y++) {
                     yearHtml += '<option value="' + y + '"' +
                         (y === currentYear ? ' selected="selected"' : '') +
